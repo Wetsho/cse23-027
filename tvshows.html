@@ -1,0 +1,205 @@
+<html>
+    <title>
+        TV Shows
+    </title>
+    <head>
+
+        <style>
+			.slideshow-container {
+		        position: relative;
+		        max-width: 1366px;
+		        margin: auto;
+		    }
+
+		    .mySlides {
+		        display: none;
+		    }
+
+		    .mySlides img {
+		        width: 100%;
+		        height: 786px;
+		    }
+
+		    .prev, .next {
+		        position: absolute;
+		        top: 50%;
+		        margin-top: -22px;
+		        padding: 16px;
+		        color: blue;
+		        font-weight: bold;
+		        font-size: 20px;
+		        transition: 0.6s ease;
+		        border-radius: 0 3px 3px 0;
+		        cursor: pointer;
+		    }
+
+		    .next {
+		        right: 0;
+		        border-radius: 3px 0 0 3px;
+		    }
+
+		    .prev:hover, .next:hover {
+		        background-color: rgba(0,0,0,0.8);
+		    }
+
+		    .fade {
+		        animation-name: fade;
+		        animation-duration: 1s;
+		    }
+
+		    @keyframes fade {
+		        from {
+		            opacity: 0.4;
+		        }
+		  
+		        to {
+		            opacity: 1;
+		        }
+		    }
+		</style>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <nav id="Navigation">
+        <ul>
+         <li><a href="movies.html">Movies</a></li>
+         <li><a href="tvshows.html">TV Shows</a></li>
+         <li><a href="games.html">Games and apps</a></li>
+         <li><a href="collections.html">Collections</a></li>
+         <li><a href="feedback.html">Feedback</a></li>
+         <a href="index.html" ><img src="logo.png" alt="warner logo" height="30px" float="left" ></a>
+        </ul>
+    </nav>
+    <br>
+    <body>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+              <a href="Friends.html"><img src="FriendsWallpaper (1).jpg"></a>
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="wp2199205-the-voice-wallpapers.jpg"></a>
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="PeacemakerWallpaper.jpg">
+            </div>
+          
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+    
+        <p>
+            <h1>
+                NEW SERIES
+            </h1>
+            <div class="image-gallery">
+                <figure>
+                    <img src="velma.jpg" alt="VELMA SERIES" height="250px">
+                    <figcaption> VELMA</figcaption>
+                </figure>
+                <figure>
+                    <img src="eastnys01.jpg" alt="EAST NEW YORK: SEASON 1 SERIES" height="250px">
+                    <figcaption>EAST NEW YORK: SEASON 1</figcaption>
+                </figure>
+                <figure>
+                    <img src="shrinking.jpg" alt="SHRINKING SERIES" height="250px">
+                    <figcaption>SHRINKING</figcaption>
+                </figure>
+                <figure>
+                    <img src="mrs davis.jpg" alt="MRS. DAVIS SERIES" height="250px">
+                    <figcaption>MRS. DAVIS</figcaption>
+                </figure>
+                <figure>
+                    <img src="nightcourt.jpg" alt="NIGHT COURT SERIES" height="250px">
+                    <figcaption>NIGHT COURT</figcaption>
+                </figure>
+                <figure>
+                    <img src="gotham knight.jpg" alt="GOTHAM KNIGHTS SERIES" height="250px">
+                    <figcaption>GOTHAM KNIGHTS</figcaption>
+                </figure>
+                <figure>
+                    <img src="mathis family.jpg" alt="MATHIS FAMILY SERIES" height="250px">
+                    <figcaption>MATHIS FAMILY MATTERS</figcaption>
+                </figure>
+                <figure>
+                    <img src="winchester.jpg" alt="THE WINCHESTERS SERIES" height="250px">
+                    <figcaption>THE WINCHESTERS</figcaption>
+                </figure>
+    
+        </p>
+        <br>
+    
+        <p>
+            <h1>
+                RETURNING SERIES
+            </h1>
+    
+            <div class="image-gallery">
+                <figure>
+                    <img src="thevoiceS23.jpg" alt="THE VOICE: S23" height="250px">
+                    <figcaption>THE VOICE: SEASON 23</figcaption>
+                </figure>
+                <figure>
+                    <a href="Friends.html"><img src="Friends.jpeg" alt="F.R.I.E.N.D.S" height="250px"></a>
+                    <figcaption>F.R.I.E.N.D.S</figcaption>
+                </figure>
+                <figure>
+                    <img src="COC.jpeg" alt="Craig Of The Creek" height="250px">
+                    <figcaption>Craig Of The Creek</figcaption>
+                </figure>
+                <figure>
+                    <img src="abottelementary.jpeg" alt="ABBOTT ELEMENTARY" height="250px">
+                    <figcaption>ABBOTT ELEMENTARY</figcaption>
+                </figure>
+                <figure>
+                    <img src="YoungSheldon.jpeg" alt="Young Sheldon" height="250px">
+                    <figcaption>Young Sheldon</figcaption>
+                </figure>
+                <figure>
+                    <img src="Superman.jpeg" alt="Superman & Lois" height="250px">
+                    <figcaption>Superman & Lois</figcaption>
+                </figure>
+                <figure>
+                    <img src="manifesent.jpg" alt="MANIFEST" height="250px">
+                    <figcaption>MANIFEST</figcaption>
+                </figure>
+                <figure>
+                    <img src="peacemaker.jpeg" alt="PEACEMAKER" height="250px">
+                    <figcaption>PEACEMAKER</figcaption>
+                </figure>
+    
+            
+        </p>
+    
+        
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+    
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+    
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              slides[slideIndex-1].style.display = "block";  
+            }
+        </script>
+       </body>
+       <footer>
+        <div class="social-media-links">
+            <a href="https://www.youtube.com/user/WarnerBrosPictures/"><img src="youtube-logo.png" alt="YouTube"></a>
+            <a href="https://www.facebook.com/warnerbrosent/"><img src="facebook-logo.png" alt="Facebook"></a>
+            <a href="https://twitter.com/Warnerbros/"><img src="twitter-logo.png" alt="Twitter"></a>
+            <a href="https://www.instagram.com/warnerbrosentertainment/"><img src="instagram-logo.png" alt="Instagram"></a>
+        </div>
+        </footer>
+</html>

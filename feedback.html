@@ -1,0 +1,137 @@
+
+<html>
+    <title>
+        Feedback
+    </title>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            form {
+  			 background-color: #fff;
+		 	 padding: 20px;
+ 			 border-radius: 10px;
+ 			 box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+ 			 max-width: 600px;
+ 			 margin: 0 auto;
+			}
+
+			h2 {
+ 			 text-align: center;
+ 			 color: white;
+			}
+
+			label {
+ 			 font-size: 16px;
+ 			 font-weight: bold;
+ 			 margin-bottom: 5px;
+             color: #333;
+			}
+
+			input[type="text"],
+			input[type="email"],
+			select,
+			textarea {
+ 			 border-radius: 3px;
+  			 border: 1px solid #ccc;
+ 			 padding: 10px;
+ 			 font-size: 16px;
+ 			 width: 100%;
+ 			 margin-bottom: 10px;
+ 			 box-sizing: border-box;
+			}
+
+			input[type="submit"] {
+			 background-color: #333;
+			 color: black;
+			 border: none;
+			 padding: 10px 20px;
+			 border-radius: 3px;
+			 font-size: 16px;
+			 cursor: pointer;
+			}
+
+			input[type="submit"]:hover {
+			 background-color: #666;
+			}
+
+			.rating-stars {
+			 display: inline-block;
+		 	 width: 120px;
+			 font-size: 0;
+			 white-space: nowrap;
+			 cursor: pointer;
+			 overflow: hidden;
+			}
+
+			.rating-stars > input {
+ 			 display: none;
+			}
+
+			.rating-stars > label {
+  			 display: inline-block;
+ 			 position: relative;
+ 			 width: 20px;
+ 			 height: 20px;
+ 			 margin: 0px 2px;
+  			 background-color: transparent;
+			}
+
+			.rating-stars > label:before {
+			 content: "\2605";
+			 position: absolute;
+			 top: 0;
+			 left: 0;
+			 font-size: 25px;
+			 color: #ccc;
+			}
+
+ 			.rating-stars > input:checked ~ label:before,
+			.rating-stars > label:hover:before {
+  			 color: #ffbf00;
+			}
+        </style>
+    </head>
+    <nav id="Navigation">
+        <ul>
+         <li><a href="movies.html">Movies</a></li>
+         <li><a href="tvshows.html">TV Shows</a></li>
+         <li><a href="games.html">Games and apps</a></li>
+         <li><a href="collections.html">Collections</a></li>
+         <li><a href="feedback.html">Feedback</a></li>
+         <a href="index.html" ><img src="logo.png" alt="warner logo" height="30px" float="left" ></a>
+        </ul>
+    </nav>
+    <br>
+    <body>
+        
+        <h2>Leave your Feedback</h2>
+
+        <form action="submit-feedback.html" method="POST">
+		
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+    
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+    
+            <label for="subject">Subject:</label><br>
+            <input type="text" id="subject" name="subject"><br>
+    
+            <label for="rating">Rating:</label><br>
+            <select id="rating" name="rating">
+                <option value="5">5 stars</option>
+                <option value="4">4 stars</option>
+                <option value="3">3 stars</option>
+                <option value="2">2 stars</option>
+                <option value="1">1 star</option>
+            </select><br>
+    
+            <label for="suggestions">Suggestions:</label><br>
+            <textarea id="suggestions" name="suggestions"></textarea><br>
+    
+            <a href="submitted.html"><input type="submit" value="Submit"></a>
+    
+        </form>
+    </body>
+</html>
+    
